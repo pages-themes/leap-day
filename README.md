@@ -1,4 +1,4 @@
-# `jekyll-theme-leap-day` gem
+# `jekyll-theme-leap-day`
 
 Leap day is a Jekyll theme for [GitHub Pages](https://pages.github.com).
 
