@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name          = "jekyll-theme-leap-day"
   s.version       = "0.0.1"
   s.authors       = ["Matt Graham"]
-  s.email         = ["support@github.com"]
+  s.email         = ["opensource+jekyll-theme-leap-day@github.com"]
   s.homepage      = "https://github.com/pages-themes/leap-day"
   s.summary       = "Leap Day is a theme for GitHub Pages"
 
