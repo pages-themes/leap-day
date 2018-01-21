@@ -12,7 +12,7 @@ var sectionHeight = function() {
 
 $(window).resize(sectionHeight);
 
-$(document).ready(function(){
+$(function() {
   $("section h1, section h2").each(function(){
     $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
     $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
@@ -29,7 +29,7 @@ $(document).ready(function(){
 
   sectionHeight();
 
-  $('img').load(sectionHeight);
+  $('img').on('load', sectionHeight);
 });
 
 fixScale = function(doc) {
