@@ -26,6 +26,14 @@ $(function() {
     $(this).parent().addClass("active");
     event.preventDefault();
   });
+  
+  // Scroll to requested header if specified in URL.
+  var url = window.location.href;
+  var inx = url.indexOf("#");
+  if (inx !== -1) {
+    var hash = url.substring(inx + 1);
+    $("a[href='#" + hash + "']").click();
+  }
 
   sectionHeight();
 
