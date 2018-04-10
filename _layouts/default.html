@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -16,9 +16,8 @@
   </head>
   <body>
 
-      <header>
-        <title>{{ site.title | default: site.github.repository_name }}</title>
-        <p class="title">{{ site.title | default: site.github.repository_name }}</p>
+      <header class="title">
+        <p>{{ site.title | default: site.github.repository_name }}</p>
         <h1>{{ site.description | default: site.github.project_tagline }}</h1>
       </header>
 
@@ -42,9 +41,11 @@
         <ul></ul>
       </nav>
 
-      <section>
-        {{ content }}
-      </section>
+      <main>
+        <section>
+          {{ content }}
+        </section>
+      </main>
 
       <footer>
         {% if site.github.is_project_page %}

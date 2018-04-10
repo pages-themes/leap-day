@@ -16,6 +16,10 @@ body {
   background: url(../images/body-background.png) #eae6d1;
 }
 
+main {
+  height: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color:#333;
   margin:0 0 10px;
@@ -147,7 +151,7 @@ dt {
   font-weight:700;
 }
 
-header {
+header.title {
   padding: 25px 20px 40px 20px;
   margin: 0;
   position: fixed;
@@ -162,7 +166,7 @@ header {
   -webkit-font-smoothing:antialiased;
   min-height: 76px;
 
-  p.title {
+  p {
     font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #f3f3f3;
     text-shadow: 0px 2px 0px #235796;
@@ -412,7 +416,7 @@ footer {
     word-wrap:break-word;
   }
 
-  header {
+  header.title {
     padding:20px 20px;
     margin: 0;
 
@@ -456,7 +460,7 @@ footer {
   body {
   }
 
-  header{
+  header.title {
     position: relative;
     padding: 5px 0px;
     min-height: 0px;

@@ -29,9 +29,10 @@ $(function() {
     // console.log('added section break', i);
     console.log('need to prefix </section><section>?');
   }
-  /*$("div.wrapper h1").each(function(){
-    $(this).innerHTML = "<section>" + $(this).innerHTML + "</section>";
-  });*/
+
+  $("section h1").each(function(){
+    $(this).wrap('<header class="section">');
+  });
 
   $("section h1, section h2, section h3").each(function(){
     $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + tagifyHeading($(this)) + "'>" + $(this).text() + "</a></li>");
