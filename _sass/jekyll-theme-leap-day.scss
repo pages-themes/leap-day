@@ -162,7 +162,7 @@ header {
   -webkit-font-smoothing:antialiased;
   min-height: 76px;
 
-  h1 {
+  p.title {
     font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #f3f3f3;
     text-shadow: 0px 2px 0px #235796;
@@ -174,7 +174,7 @@ header {
     -ms-text-overflow: ellipsis;
   }
 
-  p {
+  h1 {
     color: #d8d8d8;
     text-shadow:rgba(#000, 0.2) 0 1px 0;
     font-size: 18px;
