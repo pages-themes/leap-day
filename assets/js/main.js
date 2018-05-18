@@ -1,21 +1,42 @@
 var sectionHeight = function() {
-  var total    = $(window).height(),
-      $section = $('section').css('height','auto');
+  var total     = $(window).height(),
+      $sections = $('section');
+  $sections.each(function(){$(this).css('height','auto')});
+  var totalHeight = 0;
+  $sections.each(function(){ totalHeight += $(this).outerHeight(); });
 
-  if ($section.outerHeight(true) < total) {
-    var margin = $section.outerHeight(true) - $section.height();
-    $section.height(total - margin - 20);
+  if (totalHeight < total) {
+    $sections.each(function(){
+      var margin = $(this).outerHeight(true) - $(this).height();
+      $(this).height(total - margin - 20);
+    });
   } else {
-    $section.css('height','auto');
+    $sections.each(function(){$(this).css('height','auto')});
   }
 }
 
 $(window).resize(sectionHeight);
 
+var tagifyHeading = function(elem) {
+  return elem.text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'');
+}
+
 $(function() {
+  $sections = $("section h1");
+  for(var i = 1; i < $sections.length; i++)
+  {
+    // $sections[i].before('</section><section>');
+    // console.log('added section break', i);
+    console.log('need to prefix </section><section>?');
+  }
+
+  $("section h1").each(function(){
+    $(this).wrap('<header class="section">');
+  });
+
   $("section h1, section h2, section h3").each(function(){
-    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
-    $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
+    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + tagifyHeading($(this)) + "'>" + $(this).text() + "</a></li>");
+    $(this).attr("id",tagifyHeading($(this)));
     $("nav ul li:first-child a").parent().addClass("active");
   });
 

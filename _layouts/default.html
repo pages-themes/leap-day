@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -16,9 +16,9 @@
   </head>
   <body>
 
-      <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      <header class="title">
+        <p>{{ site.title | default: site.github.repository_name }}</p>
+        <h1>{{ site.description | default: site.github.project_tagline }}</h1>
       </header>
 
       <div id="banner">
@@ -40,10 +40,13 @@
       <nav>
         <ul></ul>
       </nav>
-      <section>
-        {{ content }}
 
-      </section>
+      <main>
+        <section>
+          {{ content }}
+        </section>
+      </main>
+
       <footer>
         {% if site.github.is_project_page %}
           <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
