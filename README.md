@@ -8,8 +8,8 @@ To create the site use:
 
 > 1. make sure you have installed **Docker** and the **Jekyll** container ()
 >
-> 2. download/clone the **kip-site** repo
-> 3. cd to the local **kip-site** root
+> 2. download/clone the **kip-pages** repo
+> 3. cd to the local **kip-pages** root
 > 4. build the site with the command : docker-compose run jekyll jekyll build
 > 5. serve the site with the command : docker-compose run --service-ports jekyll jekyll serve
 >
