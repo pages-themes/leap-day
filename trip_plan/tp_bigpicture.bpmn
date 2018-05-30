@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" id="Definitions_0vhdafl" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.14.0">
+  <bpmn:collaboration id="Collaboration_0wl4wq1">
+    <bpmn:participant id="Participant_00sck2t" name="Traveler" processRef="travel_plan_bigpicture" />
+  </bpmn:collaboration>
+  <bpmn:process id="travel_plan_bigpicture" name="trip_planner&#10;&#10;" isExecutable="true">
+    <bpmn:task id="Task_102wcfj" name="Decide on Dates" />
+    <bpmn:task id="Task_129wnbh" name="Decide on Itinerary" />
+    <bpmn:task id="Task_0svnbv1" name="Decide on Passangers" />
+    <bpmn:task id="Task_0xjy2vx" name="Reserve Airline" />
+    <bpmn:task id="Task_0otxr0f" name="Reserve Place to Stay" />
+    <bpmn:task id="Task_0uwa681" name="Reserve Atractions" />
+    <bpmn:task id="Task_0etjdyi" name="Buy Insurance" />
+    <bpmn:endEvent id="EndEvent_127c8xs" />
+    <bpmn:startEvent id="StartEvent_1" />
+    <bpmn:task id="Task_02vo9tx" name="Reserve Car" />
+    <bpmn:textAnnotation id="TextAnnotation_1klpenc">
+      <bpmn:text>Ready to Travel</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0iw9tx8" sourceRef="EndEvent_127c8xs" targetRef="TextAnnotation_1klpenc" />
+    <bpmn:association id="Association_1iq700g" sourceRef="StartEvent_1" targetRef="TextAnnotation_0rr13zd" />
+    <bpmn:textAnnotation id="TextAnnotation_0rr13zd">
+      <bpmn:text>Start Planning the Trip</bpmn:text>
+    </bpmn:textAnnotation>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0wl4wq1">
+      <bpmndi:BPMNShape id="Participant_00sck2t_di" bpmnElement="Participant_00sck2t">
+        <dc:Bounds x="189" y="29" width="923" height="456" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="272" y="250" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="245" y="286" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0otxr0f_di" bpmnElement="Task_0otxr0f" bioc:stroke="#8E24AA" bioc:fill="#E1BEE7">
+        <dc:Bounds x="632" y="102" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0xjy2vx_di" bpmnElement="Task_0xjy2vx" bioc:stroke="#8E24AA" bioc:fill="#E1BEE7">
+        <dc:Bounds x="814" y="102" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0uwa681_di" bpmnElement="Task_0uwa681" bioc:stroke="#8E24AA" bioc:fill="#E1BEE7">
+        <dc:Bounds x="632" y="228" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_02vo9tx_di" bpmnElement="Task_02vo9tx" bioc:stroke="#8E24AA" bioc:fill="#E1BEE7">
+        <dc:Bounds x="814" y="228" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_127c8xs_di" bpmnElement="EndEvent_127c8xs">
+        <dc:Bounds x="969" y="250" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="942" y="289" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_102wcfj_di" bpmnElement="Task_102wcfj" bioc:stroke="#1E88E5" bioc:fill="#BBDEFB">
+        <dc:Bounds x="421" y="102" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_129wnbh_di" bpmnElement="Task_129wnbh" bioc:stroke="#1E88E5" bioc:fill="#BBDEFB">
+        <dc:Bounds x="421" y="228" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0svnbv1_di" bpmnElement="Task_0svnbv1" bioc:stroke="#1E88E5" bioc:fill="#BBDEFB">
+        <dc:Bounds x="421" y="362" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_0rr13zd_di" bpmnElement="TextAnnotation_0rr13zd">
+        <dc:Bounds x="279" y="162" width="100" height="42" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1iq700g_di" bpmnElement="Association_1iq700g">
+        <di:waypoint x="297" y="252" />
+        <di:waypoint x="319" y="204" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1klpenc_di" bpmnElement="TextAnnotation_1klpenc">
+        <dc:Bounds x="992" y="156" width="100" height="28" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0iw9tx8_di" bpmnElement="Association_0iw9tx8">
+        <di:waypoint x="996" y="252" />
+        <di:waypoint x="1034" y="184" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0etjdyi_di" bpmnElement="Task_0etjdyi" bioc:stroke="#8E24AA" bioc:fill="#E1BEE7">
+        <dc:Bounds x="724" y="351" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

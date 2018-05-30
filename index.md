@@ -17,6 +17,10 @@ Our research to KIP challenges is novel and it explores the convergence of stand
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vTScmjPsEwlmqBdLHqHoU6OJ50CdaebiubPnxCxGSQ0ZfJZTWQaX8T7bH9XyBlc6--0iDwEQCyjrw9L/pub?w=525&amp;h=620">
 </center>
 
+# Motivating Examples
+
+[Trip Planning](./trip_plan/tp_bigpicture.md)
+
 # Process Views/Stages
 
 bla...
