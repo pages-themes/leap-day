@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# KIP Big Picture - Trip Planning Procedure
+# Trip Planning Procedure
+
+## The Big Picture
 
 Planning a trip is a common activity nowadays. A typical scenario requires activities such as:
 
@@ -21,5 +23,7 @@ In order to organize the trip planning procedure and keep things under control t
 sdffs
 
 <center>
-![Trip Planning Process](./trip_plan/tp_bigpicture.png)
+ <img src="tp_bigpicture.png" alt="Trip Planning Process" >
 </center>
+
+[back](./)
