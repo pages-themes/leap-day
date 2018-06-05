@@ -13,17 +13,34 @@ KIP compliance is also complex in a scenario where rules and policies need to be
 
 Our research to KIP challenges is novel and it explores the convergence of standard process modelling languages, machine learning and process mining [16] as we have used previously to support the collaborative framework instantiation process [18][19] and software process tailoring [17][4].
 
-<center>
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vTScmjPsEwlmqBdLHqHoU6OJ50CdaebiubPnxCxGSQ0ZfJZTWQaX8T7bH9XyBlc6--0iDwEQCyjrw9L/pub?w=525&amp;h=620">
-</center>
+
 
 # Motivating Examples
 
-[Trip Planning](./trip_plan/tp_bigpicture.md)
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><center><a href="./trip_plan/tp_bigpicture.html">Trip Planning</a></center></td>
+    <td><center><a href="https://www.w3schools.com/">Fracture Clinic</a></center></td>
+    <td><center><a href="https://www.w3schools.com/">Agile Software Process</a></center></td>
+  </tr>
+</table>
+
+
+
 
 # Process Views/Stages
 
 bla...
+
+<center>
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTScmjPsEwlmqBdLHqHoU6OJ50CdaebiubPnxCxGSQ0ZfJZTWQaX8T7bH9XyBlc6--0iDwEQCyjrw9L/pub?w=525&amp;h=620">
+</center>
 
 ***
 
