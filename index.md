@@ -8,14 +8,19 @@ Processes are important concepts in modern society since they control and standa
 
 Literature from process management brings the concept of Knowledge Intensive Processes (KIPs) [2] as being collaborative, goal-oriented, knowledge dependent and non-repeatable. KIPs can range from partially structured processes occurring when the overall workflow is not explicitly defined, but the existence of policies and regulations supports the identification of structured fragments; to unstructured processes appearing when the participants define the activities to be executed. As a result, KIPs abstractions are present in modern organization-to-individual interactions and capture the complexity imposed by the processes found in knowledge-based industries.
 
-This research agenda plans to address important challenges found in the literature related to: KIP Modelling - How to model KIP abstractions? [7]; KIP Navigation - How to help knowledge workers follow complex and unstructured process? [2]; and KIP Compliance - How to assess process compliance? [8][9]. KIP Modeling attempts to represent processes and although there is extensive research on process languages as with BPMN [10], CMMN [11], Adept[13] and YAWL[14], they fail to comply with the requirements for modeling KIPs such as goals, knowledge workers and rules. KIP Navigation is challenging and is related to knowledge workers properly following the workflow paths at runtime, from task to task [2]. Given the complex and unpredictable nature of work-graphs consisting of a multitude of cross-cutting process fragments, current solutions to support navigation [15] fail to support knowledge workers avoiding paths that lead to risks and anomalies.
-KIP compliance is also complex in a scenario where rules and policies need to be integrated with process abstractions in flexible ways and assessed as per the knowledge worker discretion, differently from [12].
-
-Our research to KIP challenges is novel and it explores the convergence of standard process modelling languages, machine learning and process mining [16] as we have used previously to support the collaborative framework instantiation process [18][19] and software process tailoring [17][4].
-
+This website intends to analyze the Knowledge Intensive Processes (KIPs) lifecycle and discuss how KIPs are modeled and executed. A process lifecycle can be seen as a collection of _stages_ and associated _operations_ that allow intra or inter stages transitions. A _Process Stage_ can be defined as a place sharing common definitions such as a common metamodel or the same representation language. For example a Java program may seen as having two stages, one as the Java source-code and another as the Java byte-code. The Java source-code is defined by the [Java grammar](https://docs.oracle.com/javase/specs/jls/se7/html/jls-18.html) while the Java byte-code has it's own [file format](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-4.html).
+ _Transitions_  can be defined as operations allowing files moving from one stage to another (inter stage transition) or staying in the same stage with a different configuration (intra stage transition). Going back to the Java program example we can see the Java compiler as an inter stage transition as it compiles Java source-code into Java byte-code. On the other hand, a Java refactoring tool can be seen as an intra stage transition as the input and output files are both Java source-code.  
+ Using stages and transitions to understand the lifecycle for knowledge intensive processes allows us to dissect and isolate concepts and abstractions, and provide a didactical way to explore the phenomena.  
 
 
 # Motivating Examples
+
+Knowledge Intensive Processes are everywhere but sometimes they are viewed as simple prescriptive processes. By prescriptive processes we mean processes that can be executed as is, such as in a car assembly line. However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs. In order to better expose the KIP phenomenon this section brings several motivating examples to expose how process are in fact complex and non-deterministic.
+
+The Trip Planning process attempts to support a traveler to plan a trip.
+The Fracture Clinic process ...
+The Agile Software Process ....
+.
 
 
 <table style="width:100%">
@@ -36,7 +41,8 @@ Our research to KIP challenges is novel and it explores the convergence of stand
 
 # Process Views/Stages
 
-bla...
+
+In order to dissect the concepts related to knowledge intensive process one must understand the
 
 <center>
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vTScmjPsEwlmqBdLHqHoU6OJ50CdaebiubPnxCxGSQ0ZfJZTWQaX8T7bH9XyBlc6--0iDwEQCyjrw9L/pub?w=525&amp;h=620">
