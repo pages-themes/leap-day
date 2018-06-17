@@ -323,7 +323,10 @@ nav {
       }
 
       &.tag-h2 {
-
+        font-size: 1.0em;
+        a {
+          font-weight: bold;
+        }
         + .tag-h1 {
           margin-top:10px;
         }
