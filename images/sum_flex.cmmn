@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmmn:definitions xmlns:dc="http://www.omg.org/spec/CMMN/20151109/DC" xmlns:di="http://www.omg.org/spec/CMMN/20151109/DI" xmlns:cmmndi="http://www.omg.org/spec/CMMN/20151109/CMMNDI" xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1netadr" targetNamespace="http://bpmn.io/schema/cmmn" exporter="Camunda Modeler" exporterVersion="1.15.0">
+  <cmmn:case id="Case_1">
+    <cmmn:casePlanModel id="CasePlanModel_1" name="A CasePlanModel">
+      <cmmn:planItem id="PlanItem_1" definitionRef="Task_1" />
+      <cmmn:planItem id="PlanItem_0ua1zrz" definitionRef="Task_18rv2pt">
+        <cmmn:entryCriterion id="EntryCriterion_143lt20" sentryRef="Sentry_0vxtcw4" />
+      </cmmn:planItem>
+      <cmmn:sentry id="Sentry_0vxtcw4">
+        <cmmn:planItemOnPart id="PlanItemOnPart_17ce989" sourceRef="PlanItem_1">
+          <cmmn:standardEvent>complete</cmmn:standardEvent>
+        </cmmn:planItemOnPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_17mgtkd">
+        <cmmn:planItemOnPart id="PlanItemOnPart_15hkde1" sourceRef="PlanItem_1">
+          <cmmn:standardEvent>complete</cmmn:standardEvent>
+        </cmmn:planItemOnPart>
+      </cmmn:sentry>
+      <cmmn:planningTable id="PlanningTable_1xdn9qd">
+        <cmmn:discretionaryItem id="PlanItem_00rycwc" definitionRef="Task_0hbrzoq">
+          <cmmn:entryCriterion id="EntryCriterion_0lw5zdp" sentryRef="Sentry_17mgtkd" />
+        </cmmn:discretionaryItem>
+      </cmmn:planningTable>
+      <cmmn:task id="Task_1" name="Get Numbers" />
+      <cmmn:task id="Task_18rv2pt" name="Calculate Sum" />
+      <cmmn:task id="Task_0hbrzoq" name="Validate Numbers" />
+    </cmmn:casePlanModel>
+  </cmmn:case>
+  <cmmn:association id="Association_1paxn99" sourceRef="PlanItem_0ua1zrz" targetRef="TextAnnotation_1gh40sf" />
+  <cmmn:association id="Association_0evfhc1" sourceRef="EntryCriterion_143lt20" targetRef="TextAnnotation_1a48zvk" />
+  <cmmn:textAnnotation id="TextAnnotation_1a48zvk">
+    <cmmn:text>Entry Criteria</cmmn:text>
+  </cmmn:textAnnotation>
+  <cmmn:textAnnotation id="TextAnnotation_1gh40sf">
+    <cmmn:text>Activity</cmmn:text>
+  </cmmn:textAnnotation>
+  <cmmn:association id="Association_1pk7qla" sourceRef="PlanItem_00rycwc" targetRef="TextAnnotation_1udip24" />
+  <cmmn:textAnnotation id="TextAnnotation_1udip24">
+    <cmmn:text>Discretionary Activity</cmmn:text>
+  </cmmn:textAnnotation>
+  <cmmndi:CMMNDI>
+    <cmmndi:CMMNDiagram id="_5a66685b-5f57-4e2f-b1d1-acca4fae04b2">
+      <cmmndi:Size width="500" height="500" />
+      <cmmndi:CMMNShape id="DI_CasePlanModel_1" cmmnElementRef="CasePlanModel_1">
+        <dc:Bounds x="181" y="65" width="538" height="318" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_1_di" cmmnElementRef="PlanItem_1">
+        <dc:Bounds x="263" y="158" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_0ua1zrz_di" cmmnElementRef="PlanItem_0ua1zrz">
+        <dc:Bounds x="476" y="157" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_143lt20_di" cmmnElementRef="EntryCriterion_143lt20">
+        <dc:Bounds x="466" y="182" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNEdge id="PlanItemOnPart_17ce989_di" cmmnElementRef="PlanItemOnPart_17ce989" targetCMMNElementRef="EntryCriterion_143lt20" isStandardEventVisible="true">
+        <di:waypoint x="363" y="197" />
+        <di:waypoint x="466" y="196" />
+        <cmmndi:CMMNLabel>
+          <dc:Bounds x="383" y="171.5" width="51" height="13" />
+        </cmmndi:CMMNLabel>
+      </cmmndi:CMMNEdge>
+      <cmmndi:CMMNShape id="DiscretionaryItem_1rdw7f4_di" cmmnElementRef="PlanItem_00rycwc">
+        <dc:Bounds x="255" y="291" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="TextAnnotation_1gh40sf_di" cmmnElementRef="TextAnnotation_1gh40sf">
+        <dc:Bounds x="599" y="85" width="100" height="30" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNEdge id="Association_1paxn99_di" cmmnElementRef="Association_1paxn99">
+        <di:waypoint x="576" y="160" />
+        <di:waypoint x="631" y="115" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNEdge>
+      <cmmndi:CMMNShape id="TextAnnotation_1a48zvk_di" cmmnElementRef="TextAnnotation_1a48zvk">
+        <dc:Bounds x="379" y="96" width="100" height="30" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNEdge id="Association_0evfhc1_di" cmmnElementRef="Association_0evfhc1">
+        <di:waypoint x="467" y="182" />
+        <di:waypoint x="436" y="126" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNEdge>
+      <cmmndi:CMMNShape id="TextAnnotation_1udip24_di" cmmnElementRef="TextAnnotation_1udip24">
+        <dc:Bounds x="410" y="332" width="100" height="30" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNEdge id="Association_1pk7qla_di" cmmnElementRef="Association_1pk7qla">
+        <di:waypoint x="355" y="331" />
+        <di:waypoint x="383" y="331" />
+        <di:waypoint x="383" y="347" />
+        <di:waypoint x="410" y="347" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNEdge>
+      <cmmndi:CMMNShape id="EntryCriterion_0lw5zdp_di" cmmnElementRef="EntryCriterion_0lw5zdp">
+        <dc:Bounds x="300" y="277" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNEdge id="PlanItemOnPart_15hkde1_di" cmmnElementRef="PlanItemOnPart_15hkde1" targetCMMNElementRef="EntryCriterion_0lw5zdp" isStandardEventVisible="true">
+        <di:waypoint x="313" y="238" />
+        <di:waypoint x="313" y="258" />
+        <di:waypoint x="310" y="258" />
+        <di:waypoint x="310" y="277" />
+        <cmmndi:CMMNLabel>
+          <dc:Bounds x="282" y="245" width="51" height="13" />
+        </cmmndi:CMMNLabel>
+      </cmmndi:CMMNEdge>
+    </cmmndi:CMMNDiagram>
+  </cmmndi:CMMNDI>
+</cmmn:definitions>

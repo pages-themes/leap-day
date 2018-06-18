@@ -314,7 +314,7 @@ nav {
 
         a {
           font-weight: bold;
-          color: #333;
+
         }
 
         + .tag-h2 {
@@ -326,8 +326,20 @@ nav {
         font-size: 1.0em;
         a {
           font-weight: bold;
+
         }
         + .tag-h1 {
+          margin-top:10px;
+        }
+      }
+      &.tag-h3 {
+        font-size: 0.9em;
+        a {
+          font-weight: lighter;
+
+        }
+
+        + .tag-h2 {
           margin-top:10px;
         }
       }
