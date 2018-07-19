@@ -92,6 +92,10 @@ end
   - level 2 item
 - level 1 item
 
+### A link to another header:
+
+This is a [link to header 3](#header-3){:class="jump-to-header"}
+
 ### Small image
 
 ![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
