@@ -95,24 +95,46 @@ In order to dissect the concepts related to knowledge intensive process one must
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vTScmjPsEwlmqBdLHqHoU6OJ50CdaebiubPnxCxGSQ0ZfJZTWQaX8T7bH9XyBlc6--0iDwEQCyjrw9L/pub?w=525&amp;h=620">
 </center>
 
-
 ***
 
 ### Conceptual
 
-bla...
+Tacit knowledge is a big asset when performing knowledge-intensive processes. Although not explicitly materialized, tacit knowledge, which can also be seen as the experience of the worker, comprises one of the elements in the Conceptual View. Bodies of knowledge are also part of this Conceptual View. Examples of bodies of knowledge are knowledge bases, wikis, product reference manuals and documentation, and even maturity models or ISO documentations. Conceptual information can be either expressed in Natural Language or Structured Natural Language.
+
 
 ***
 
 ### Process Model
 
-bla...
+Process Model stage is when processes can be modeled and expressed into a set of activities and their dependencies. Processes are extracted (reified) from the available concepts (Conceptual View), and created according to the methodology of the process defined. Processes have information such as the activity name, role, artifact, flow, decision, event, and rule.
+
+*Activity* is the identification a piece of work that needs to be performed when executing the process.
+*Role* is the identification of which department, person or external parties are responsible for the execution of the activities.
+*Artifact* is the data that can be used as input or is the output of each activity. 
+*Flow* is the direction of the activity. It indicates whatever occurs before and after each activity.
+*Decision* is when there is the need to act upon occurrences that are optional. It can either result in the execution of an activity, or multiple activities, as well as it can lead to another decision or artifact.
+*Events* are instant occurrences in the process. They usually have a cause and an impact.
+*Rules* can be defined as the constraints that processes should consider when executed.
+
+Processes’ activities can be tailored or merged. Tailoring means It is possible to customize a process for a specific instance execution on the next stage - the Work Plan - and merging means it is possible to execute two or more process activities at once. Merging activities also means changes will occur from this stage of the life cycle on. 
+
 
 ***
 
 ### Working Plan
 
-bbla...
+The Working Plan stage represents the moment process activities, methodology, technical tacit or explicit knowledge are represented by chunks of work meant to be done. One process generates one or more work plans. One working plan has information such as task, person, milestone, flow, decision, event and iteration. 
+
+*Task* is a chunk of executable work.
+*Person* is whoever is responsible for working on that task. This person should also be responsible for communicating occurrences while working on each task. 
+*Milestone* is the goal that a set of tasks is supposed to reach. 
+*Flow* is the indication of which task is executed before and which task is executed after a task.
+*Decision* …
+*Event* … 
+*Iteration* is each set of tasks that can produce a minimum deliverable. The tasks to be executed in each iteration are selected at total discretion of the project manager and team, according to what’s been agreed with the client/stakeholders. 
+
+Communications, task length definition in this stage depend on people, which makes the process vary according to decisions made when either planning or executing a task. What information is relevant to a person can also vary. These characteristics of knowledge-intensive processes are evident at this stage. 
+
 
 ***
 
