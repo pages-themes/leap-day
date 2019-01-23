@@ -140,8 +140,7 @@ Communications, task length definition in this stage depend on people, which mak
 
 ### Log
 
-bla...
-
+Now, Log Stage will be described.
 ***
 
 
