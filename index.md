@@ -146,7 +146,7 @@ Now, Log Stage will be described.
 
 ## KIP Transitions
 
-bla... KIP Transition Text
+bla... KIP Transition Text 11111
 
 ***
 
