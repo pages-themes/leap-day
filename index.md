@@ -151,38 +151,38 @@ Next, each transformation tasks can undergo will be detailed.
 
 ## KIP Transitions
 
-Although using standard processes result in positive outcomes such as predictability, performance and reliability, different businesses and environments might have their own specific requirements. To comply with these differentials, a standard process might need to endure minor changes. These changes can be reification, tailoring or merging process activities. In other words, a process suffers adaptations in order to comply with specific needs of organizations or projects. 
+Although using standard processes result in positive outcomes such as predictability, performance and reliability, different businesses and environments might have their own specific requirements. To comply with these differentials, a standard process might need to endure minor changes. These changes can be reification, tailoring or merging processes and/or its activities. In other words, a process suffers adaptations in order to comply with specific needs of organizations or projects. 
 
-Each of these adaptations can result in one or multiple transformations of the processes. These transformations are specific and different throughout each stage change. Also, processes can suffer instantiation, enactment and improvements, even when they are not necessarily changed between stages. Read below to understand the differences of each transformation and/or adaptation processes can undergo. 
+Each of these adaptations can result in one or multiple process transformations. These transformations are specific and different throughout each stage change. Also, processes can suffer instantiation, enactment and improvements, even when they are not necessarily changed between stages. Read below to understand the differences of each transformation and/or adaptation processes can undergo. 
+
 
 ***
 
 ### Reification
 
-bla...
+This transformation represents when the concepts from the Conceptual View are transformed in processes. This means this process will now have a starting point, a flow, indications of responsibilities for groups of process activities, i.e., will have incorporated the structured elements that belong to the Conceptual View.
 
 ***
 
 ### Tailoring
 
-bla...
+When in the Process View stage, processes may need to be modified to comply with business or environment needs. These modifications are called tailoring. In other words, a main established process will be adapted when running certain instances. For example, if one project of a company works with hazardous materials, this project might need to run different steps in order to comply with safety obligations, but at the same time, this project also runs the main established organizational process. 
+One of the modification operations a process can experience is Merge. This means two or more process activities can be merged into one. 
 
 ***
 
 ### Instantiation
 
-bla...
-
+Instantiation occurs when processes become executable chunks of work and a working plan is materialized. It is the transformation between process and actual work plans. The process is defined and every time the process is executed, entirely or partially, it generates a new instance.
 ***
 
 ### Execution/Enactment
 
-bla...
+The execution of the Work plan is called enactment. Through enactment it is possible to generate logs of work plans executions.
 
 ***
 
 ### Improvement
 
-bla...
-
+After enactment, logs of each process and instance execution are recorded. Analyzing these logs, looking either for pattern repetition or activities not executed, can be used as input to process Improvement. 
 ***
