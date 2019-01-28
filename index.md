@@ -108,13 +108,13 @@ Tacit knowledge is a big asset when performing knowledge-intensive processes. Al
 
 Process Model stage is when processes can be modeled and expressed into a set of activities and their dependencies. Processes are extracted (reified) from the available concepts (Conceptual View), and created according to the methodology of the process defined. Processes have information such as the activity name, role, artifact, flow, decision, event, and rule.
 
-*Activity* is the identification a piece of work that needs to be performed when executing the process.
-*Role* is the identification of which department, person or external parties are responsible for the execution of the activities.
-*Artifact* is the data that can be used as input or is the output of each activity. 
-*Flow* is the direction of the activity. It indicates whatever occurs before and after each activity.
-*Decision* is when there is the need to act upon occurrences that are optional. It can either result in the execution of an activity, or multiple activities, as well as it can lead to another decision or artifact.
-*Events* are instant occurrences in the process. They usually have a cause and an impact.
-*Rules* can be defined as the constraints that processes should consider when executed.
+- *Activity* is the identification a piece of work that needs to be performed when executing the process.
+- *Role* is the identification of which department, person or external parties are responsible for the execution of the activities.
+- *Artifact* is the data that can be used as input or is the output of each activity. 
+- *Flow* is the direction of the activity. It indicates whatever occurs before and after each activity.
+- *Decision* is when there is the need to act upon occurrences that are optional. It can either result in the execution of an activity, or multiple activities, as well as it can lead to another decision or artifact.
+- *Events* are instant occurrences in the process. They usually have a cause and an impact.
+- *Rules* can be defined as the constraints that processes should consider when executed.
 
 Processes’ activities can be tailored or merged. Tailoring means It is possible to customize a process for a specific instance execution on the next stage - the Work Plan - and merging means it is possible to execute two or more process activities at once. Merging activities also means changes will occur from this stage of the life cycle on. 
 
@@ -125,13 +125,13 @@ Processes’ activities can be tailored or merged. Tailoring means It is possibl
 
 The Working Plan stage represents the moment process activities, methodology, technical tacit or explicit knowledge are represented by chunks of work meant to be done. One process generates one or more work plans. One working plan has information such as task, person, milestone, flow, decision, event and iteration. 
 
-*Task* is a chunk of executable work.
-*Person* is whoever is responsible for working on that task. This person should also be responsible for communicating occurrences while working on each task. 
-*Milestone* is the goal that a set of tasks is supposed to reach. 
-*Flow* is the indication of which task is executed before and which task is executed after a task.
-*Decision* …
-*Event* … 
-*Iteration* is each set of tasks that can produce a minimum deliverable. The tasks to be executed in each iteration are selected at total discretion of the project manager and team, according to what’s been agreed with the client/stakeholders. 
+- *Task* is a chunk of executable work.
+- *Person* is whoever is responsible for working on that task. This person should also be responsible for communicating occurrences while working on each task. 
+- *Milestone* is the goal that a set of tasks is supposed to reach. 
+- *Flow* is the indication of which task is executed before and which task is executed after a task.
+- *Decision* …
+- *Event* … 
+- *Iteration* is each set of tasks that can produce a minimum deliverable. The tasks to be executed in each iteration are selected at total discretion of the project manager and team, according to what’s been agreed with the client/stakeholders. 
 
 Communications, task length definition in this stage depend on people, which makes the process vary according to decisions made when either planning or executing a task. What information is relevant to a person can also vary. These characteristics of knowledge-intensive processes are evident at this stage. 
 
@@ -140,13 +140,20 @@ Communications, task length definition in this stage depend on people, which mak
 
 ### Log
 
-Now, Log Stage will be described.
+When each task is executed at the Working Plan stage, i.e, a person performed the work described in a task, the task is updated with information regarding the execution. Information such as date and hour of completion, who was responsible for completing the task, and all sorts of information can be collected regarding a task and its workflow. 
+
+Logs allow the identification of repetitive patterns during execution, which can become improvements in the process. 
+
+Next, each transformation tasks can undergo will be detailed.
+
 ***
 
 
 ## KIP Transitions
 
-bla...
+Although using standard processes result in positive outcomes such as predictability, performance and reliability, different businesses and environments might have their own specific requirements. To comply with these differentials, a standard process might need to endure minor changes. These changes can be reification, tailoring or merging process activities. In other words, a process suffers adaptations in order to comply with specific needs of organizations or projects. 
+
+Each of these adaptations can result in one or multiple transformations of the processes. These transformations are specific and different throughout each stage change. Also, processes can suffer instantiation, enactment and improvements, even when they are not necessarily changed between stages. Read below to understand the differences of each transformation and/or adaptation processes can undergo. 
 
 ***
 
