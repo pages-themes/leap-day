@@ -171,6 +171,20 @@ This transformation represents when the concepts from the Conceptual View are tr
 When in the Process View stage, processes may need to be modified to comply with business or environment needs. These modifications are called tailoring. In other words, a main established process will be adapted when running certain instances. For example, if one project of a company works with hazardous materials, this project might need to run different steps in order to comply with safety obligations, but at the same time, this project also runs the main established organizational process. 
 One of the modification operations a process can experience is Merge. This means two or more process activities can be merged into one. 
 
+As an example, let's suppose a worker has to collect, verify and store measures (e.g., size and weight) of parcels that are supposed to be mailed to clients, so a system can forsee delivery expenses. 
+
+A simple BPMN model for is process is shown below. 
+
+xxxxx bpmn tailoring 
+
+After posting all parcels in the post office service, some prices may vary. The original process does not consider that measures and prices might have to be updated. A tailored process to include this unforeseen activity is illustrated below. One process activity was added to the original process.
+
+xxxxx bpmn tailoring 2 
+
+Source: PILLAT, R. (2018). BPMNt: A proposal for flexible process tailoring representation in BPMN. Tese de Doutorado. Universidade Federal do Rio de Janeiro, Brasil. 
+https://www.cos.ufrj.br/uploadfile/publicacao/2825.pdf
+
+
 ***
 
 ### Instantiation
