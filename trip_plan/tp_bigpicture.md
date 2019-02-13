@@ -57,5 +57,18 @@ In this scenario, some complex questions arise: How to keep track of my progress
  Fig4. Trip Planning Process log
 </center>
 
+Other than these questions raised, there is a list of activities (that certainly are part of the process) to think about that were not mentioned such as: 
+
+- Check baggage allowance (weight and sizes can prevent you from getting that boat transfer or that low cost airplane ticket) 
+- How to build and communicate your travel plans when you're in a group
+- How to share expenses? The hotel room for 4 people, or the uber someone paid
+- Currency exchange
+- Airport transfers
+- Documents checklist (visas, permits...) 
+- Flight upgrade rules
+- Long layover: what can I do with these few hours I have in Rome?
+- Loyalty programs 
+- Trip overall budget planning
+
 
 [home](../index.html)
