@@ -173,13 +173,14 @@ One of the modification operations a process can experience is Merge. This means
 
 As an example, let's suppose a worker has to collect, verify and store measures (e.g., size and weight) of parcels that are supposed to be mailed to clients, so a system can forsee delivery expenses. 
 
-A simple BPMN model for is process is shown below. 
-
-xxxxx bpmn tailoring 
+A simple example using a common notation (BPMN) is shown below. 
 
 After posting all parcels in the post office service, some prices may vary. The original process does not consider that measures and prices might have to be updated. A tailored process to include this unforeseen activity is illustrated below. One process activity was added to the original process.
 
-xxxxx bpmn tailoring 2 
+<center>
+ <img src="./images/TailoringExample.png" alt="Tailoring Example using BPMN"/>
+ Fig. Tailoring example using BPMN.
+</center>
 
 Source: PILLAT, R. (2018). BPMNt: A proposal for flexible process tailoring representation in BPMN. Tese de Doutorado. Universidade Federal do Rio de Janeiro, Brasil. 
 https://www.cos.ufrj.br/uploadfile/publicacao/2825.pdf
