@@ -15,15 +15,15 @@
     {% endif %}
     <li>
       <em>{{ folder | remove_first: '/' | split:'' | reverse | join:'' | remove_first: '/' | split:'' | reverse | join:'' }}</em>
+      <ul class="subnav">
       {% for node in site.pages %}
         {% if node.dir == folder %}
-          <ul class="subnav">
             <li>
               <a class="sidebar-nav-item{% if page.url == node.url %} active-page{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
             </li>
-          </ul>
         {% endif %}
       {% endfor %}
+      </ul>
     </li>
   {% endfor %}
 </ul>
