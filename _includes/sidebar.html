@@ -1,0 +1,29 @@
+<ul>
+  {% assign all_folders = site.pages | map: "dir" %}
+  {% assign folders = all_folders | uniq %}
+  <ul class="nav">
+  {% for node in site.pages %}
+    {% if node.dir == "/" %}
+      <li>
+        <a class="sidebar-nav-item{% if page.url == node.url %} active-page{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  {% for folder in folders %}
+    {% if folder == "/assets/css/" or folder == "/" %}
+      {% continue %}
+    {% endif %}
+    <li>
+      <em>{{ folder | remove_first: '/' | split:'' | reverse | join:'' | remove_first: '/' | split:'' | reverse | join:'' }}</em>
+      {% for node in site.pages %}
+        {% if node.dir == folder %}
+          <ul class="subnav">
+            <li>
+              <a class="sidebar-nav-item{% if page.url == node.url %} active-page{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+            </li>
+          </ul>
+        {% endif %}
+      {% endfor %}
+    </li>
+  {% endfor %}
+</ul>

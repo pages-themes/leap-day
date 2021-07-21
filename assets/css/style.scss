@@ -2,3 +2,24 @@
 ---
 
 @import 'jekyll-theme-leap-day';
+
+#sidebar ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.right {
+  text-align: left;
+  margin-left: 280px;
+  float: right;
+}
+
+.active-page {
+  //font-style: italic;
+  //font-weight: bold;
+  color: #333
+}
+
+code {
+  font-family: monospace, serif;
+}

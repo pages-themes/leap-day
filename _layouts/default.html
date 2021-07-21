@@ -22,9 +22,9 @@
       </header>
 
       <div id="banner">
-        <span id="logo"></span>
+        <a id="logo" href="{{ site.github.repository_url }}"></a>
 
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{page.path}}" class="button fork"><strong>Edit me</strong></a>
         {% if site.show_downloads %}
           <div class="downloads">
             <span>Downloads:</span>
@@ -37,18 +37,23 @@
       </div><!-- end banner -->
 
     <div class="wrapper">
-      <nav>
-        <ul></ul>
+      <nav class="left">
+        <ul class="toc"></ul>
       </nav>
       <section>
-        {{ content }}
+        {% include anchor_headings.html html=content anchorBody="#" %}
 
       </section>
+      <nav class="right">
+        {% include sidebar.html %}
+      </nav>
       <footer>
         {% if site.github.is_project_page %}
           <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+        {% if site.credit %}
+          <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+        {% endif %}
       </footer>
     </div>
 
