@@ -14,8 +14,14 @@ $(window).resize(sectionHeight);
 
 $(function() {
   $("section h1, section h2, section h3").each(function(){
-    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
-    $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
+    var href = $(this).attr("id");
+
+    if (!href) {
+      href = $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'');
+    }
+
+    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + href + "'>" + $(this).text() + "</a></li>");
+    $(this).attr("id",href);
     $("nav ul li:first-child a").parent().addClass("active");
   });
 
