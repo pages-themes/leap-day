@@ -104,7 +104,7 @@ end
 ### Definition lists can be used with HTML syntax.
 
 <dl>
-<dt>Name</dt>
+<dt>Name: Lanre</dt>
 <dd>Godzilla</dd>
 <dt>Born</dt>
 <dd>1952</dd>
