@@ -8,11 +8,12 @@ by Matt Graham
 @import "rouge-base16-dark";
 
 body {
+  height: 100vh;
   font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#2b2b2b;
   font-weight:300;
   margin: 0px;
-  padding:0px 0 20px 0px;
+  padding: 0px;
   background: url(../images/body-background.png) #eae6d1;
 }
 
@@ -70,9 +71,8 @@ strong {
 }
 
 .wrapper {
-  width:650px;
-  margin:0 auto;
-  position:relative;
+  height: 100%;
+  padding-top: 40px;
 }
 
 section img {
@@ -163,12 +163,6 @@ dt {
 
 header {
   padding: 25px 20px 40px 20px;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left:0;
-  right:0;
-  width: 100%;
   text-align: center;
   background: url(../images/background.png) #4276b6;
   box-shadow: 1px 0px 2px rgba(0,0,0,.75);
@@ -285,11 +279,12 @@ header {
 }
 
 section {
-  width:590px;
+  overflow-y: auto;
+  height: 100%;
+  position: relative;
   padding: 30px 30px 50px 30px;
-  margin: 20px 0;
-  margin-top: 190px;
-  position:relative;
+  margin: 0px 20px 20px 20px;;
+  bottom: 0;
   background: #fbfbfb;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
@@ -302,14 +297,9 @@ small {
 
 nav {
   width: 230px;
-  position: fixed;
-  top: 220px;
-  left: 50%;
-  bottom: 0;
-  margin-left:-580px;
   text-align: right;
   overflow-y: auto;
-
+  margin-bottom: 10px;
 
   ul {
     list-style: none;
@@ -359,15 +349,11 @@ nav {
 }
 
 footer {
-  width:180px;
-  position: fixed;
-  left:50%;
-  margin-left:-530px;
-  bottom:20px;
   text-align: right;
   line-height: 16px;
+  margin-top: 10px;
 }
-
+/*
 @media print, screen and (max-width: 1060px) {
 
   div.wrapper {
@@ -531,3 +517,4 @@ footer {
     width:auto;
   }
 }
+*/

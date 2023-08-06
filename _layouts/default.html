@@ -15,8 +15,8 @@
 
     {% include head-custom.html %}
   </head>
-  <body>
-
+  <body style="display: flex; flex-direction: column;">
+  <!-- <div style="display: flex; flex-direction: column;width: 100vw;height: 100vh;">-->
       <header>
         <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
@@ -37,20 +37,25 @@
         {% endif %}
       </div><!-- end banner -->
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
+    <div class="wrapper" style="display: flex; min-height: 0;">
+	  <div style="display: flex; flex-direction: column; min-height: 0;">
+		<nav>
+			<ul></ul>
+		</nav>      
+		<footer>
+			{% if site.github.is_project_page %}
+			<p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+			{% endif %}
+			<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+		</footer>
+	  </div>
+	  <div style="display: flex; flex-direction: column; min-height: 0;">
       <section>
         {{ content }}
 
       </section>
-      <footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
-      </footer>
+      </div>
     </div>
+	<!-- </div>-->
   </body>
 </html>
