@@ -25,7 +25,32 @@
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        <!-- <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>-->
+		
+		{% if site.data.menu.primary[0] %}
+		{% for item in site.data.menu.primary %}
+		{% if item.subfolderitems[0] %}
+			<ul>
+				{% for entry in item.subfolderitems %}
+					<li>
+						<div class="dropdown">
+						<a href="{{ entry.url }}" class="dropbtn">{{ entry.name }}</a>
+						{% if entry.subsubfolderitems[0] %}
+							<div class="dropdown-content">
+								{% for subentry in entry.subsubfolderitems %}
+									<a href="{{ subentry.url }}">{{ subentry.name }}</a>
+                                {% endfor %}
+							</div>
+                        {% endif %}
+						</div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+		{% endfor %}
+		{% endif %}   
+
+		
         {% if site.show_downloads %}
           <div class="downloads">
             <span>Downloads:</span>
@@ -38,7 +63,7 @@
       </div><!-- end banner -->
 
     <div class="wrapper" style="display: flex; min-height: 0;">
-	  <div style="display: flex; flex-direction: column; min-height: 0;">
+	  <div style="display: flex; flex-direction: column; min-height: 0; justify-content: space-between;">
 		<nav>
 			<ul></ul>
 		</nav>      
@@ -49,7 +74,7 @@
 			<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
 		</footer>
 	  </div>
-	  <div style="display: flex; flex-direction: column; min-height: 0;">
+	  <div style="display: flex; flex-direction: column; min-height: 0;flex-grow: 1;">
       <section>
         {{ content }}
 
