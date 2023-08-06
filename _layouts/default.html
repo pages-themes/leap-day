@@ -30,11 +30,11 @@
 				{% for entry in item.subfolderitems %}
 					<li>
 						<div class="dropdown">
-						<a href="{{ entry.url }}" class="dropbtn">{{ entry.name }}</a>
+						<a href="{{ entry.url | absolute_url }}" class="dropbtn">{{ entry.name }}</a>
 						{% if entry.subsubfolderitems[0] %}
 							<div class="dropdown-content">
 								{% for subentry in entry.subsubfolderitems %}
-									<a href="{{ subentry.url }}">{{ subentry.name }}</a>
+									<a href="{{ subentry.url | absolute_url }}">{{ subentry.name }}</a>
                                 {% endfor %}
 							</div>
                         {% endif %}
