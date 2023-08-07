@@ -24,7 +24,7 @@
       <div id="banner">
         <span id="logo"></span>
 		<div class="menubar">
-			<label for="menu-toggle" class="menutoggle"><span id="menuicon"></span></label>
+			<label for="menu-toggle" class="menutoggle" id="menuicon"></label>
 		    <input type="checkbox" id="menu-toggle" class="menutoggle" style="display: none;"/>
 		{% if site.data.menu.primary[0] %}
 		{% for item in site.data.menu.primary %}
@@ -67,7 +67,7 @@
 			<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
 		</footer>
 	  </div>
-	  <div id="content" class="flexcolumn" style="flex-grow: 1;">
+	  <div id="content" class="flexcolumn" style="flex-grow: 1; min-width: 0;">
       <section>
         {{ content }}
       </section>
