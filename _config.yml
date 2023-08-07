@@ -1,5 +1,3 @@
-title: Better Leap Day theme
-description: Better Leap Day is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-better-leap-day
+remote_theme: alexcatze/better-leap-day
+plugins:
+- jekyll-remote-theme
