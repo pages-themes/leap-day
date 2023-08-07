@@ -11,7 +11,7 @@ To use the Leap day theme:
 1. Add the following to your site's `_config.yml`:
 
     ```yml
-    remote_theme: remote_theme: alexcatze/better-leap-day
+    remote_theme: alexcatze/better-leap-day
     plugins:
     - jekyll-remote-theme # add this line to the plugins list if you already have one
     ```
