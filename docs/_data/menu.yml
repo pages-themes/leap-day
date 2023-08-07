@@ -1,0 +1,18 @@
+primary:
+  - title: Main Menu
+    subfolderitems:
+      - name: "Home"
+        url: "/"
+      - name: "Project on Github"
+        url: "https://github.com/AlexCatze/better-leap-day"
+      - name: "Dropdown example"
+        url: "/"
+        subsubfolderitems:
+          - name: "Link to another site(Github)"
+            url: "http://github.com"
+          - name: "Link to another page(SUPPORT)"
+            url: "/SUPPORT.html"
+          - name: "Link to another page(CODE OF CONDUCT)"
+            url: "/CODE OF CONDUCT.html"
+          - name: "Link to another page(CONTRIBUTING)"
+            url: "/CONTRIBUTING.html"
