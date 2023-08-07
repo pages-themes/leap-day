@@ -77,7 +77,6 @@ header {
 
 section {
   overflow-y: auto;
-  //overflow-y: clip;
   height: 100%;
   position: relative;
   padding: 30px 30px 50px 30px;
@@ -94,13 +93,11 @@ footer {
   text-align: right;
   line-height: 16px;
   margin-top: 10px;
-  //padding-right: 15px;
+  margin-right: 15px;
 }
 
 #sidemenu {
-  //overflow-y: auto;
   overflow-y: clip;
-  width: 230px;
   text-align: right;
   min-height: 0;
   margin-bottom: 10px;
@@ -110,7 +107,7 @@ footer {
     list-style-image: none;
     font-size: 14px;
     line-height: 24px;
-    //padding-right: 15px;
+    margin-right: 15px;
     li {
       padding: 5px 0px;
       line-height: 16px;
