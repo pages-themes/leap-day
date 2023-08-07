@@ -1,76 +1,100 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="{{ site.lang | default: " en-US" }}">
 
-{% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-    <!--[if lt IE 9]>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	{% seo %}
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<script src="https://code.jquery.com/jquery-3.3.0.min.js"
+		integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+	<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+	<!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+	<noscript>
+		<style>
+		  /**
+		  * Reinstate scrolling for non-JS clients
+		  */
+		  .simplebar-content-wrapper {
+			scrollbar-width: auto;
+			-ms-overflow-style: auto;
+		  }
+	  
+		  .simplebar-content-wrapper::-webkit-scrollbar,
+		  .simplebar-hide-scrollbar::-webkit-scrollbar {
+			display: initial;
+			width: initial;
+			height: initial;
+		  }
+		</style>
+	  </noscript>
+	{% include head-custom.html %}
+</head>
 
-    {% include head-custom.html %}
-  </head>
-  <body>
-      <header>
-        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
-      </header>
+<body>
+	<header>
+		<h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+		<p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+	</header>
 
-      <div id="banner">
-        <span id="logo" class="banner-icon"></span>
-		
+	<div id="banner">
+		<span id="logo" class="banner-icon"></span>
+
 		<label for="menu-toggle" class="banner-icon" id="menu-icon"></label>
-		<input type="checkbox" id="menu-toggle"/>
+		<input type="checkbox" id="menu-toggle" />
 		{% if site.data.menu.primary[0] %}
 		{% for item in site.data.menu.primary %}
 		{% if item.subfolderitems[0] %}
-			<ul class="menuroot">
-				{% for entry in item.subfolderitems %}
-					<li>
-						<div class="dropdown">
-						<a href="{{ entry.url | absolute_url }}" class="dropbtn">{{ entry.name }}</a>
-						{% if entry.subsubfolderitems[0] %}
-							<div class="dropdown-content">
-								<ul>
-								{% for subentry in entry.subsubfolderitems %}
-									<li>
-										<a href="{{ subentry.url | absolute_url }}">{{ subentry.name }}</a>
-									</li>
-                                {% endfor %}
-								</ul>
-							</div>
-                        {% endif %}
-						</div>
-                    </li>
-                {% endfor %}
-            </ul>
-        {% endif %}
+		<ul class="menuroot">
+			{% for entry in item.subfolderitems %}
+			<li>
+				<div class="dropdown">
+					<a href="{{ entry.url | absolute_url }}" class="dropbtn">{{ entry.name }}</a>
+					{% if entry.subsubfolderitems[0] %}
+					<div class="dropdown-content">
+						<ul>
+							{% for subentry in entry.subsubfolderitems %}
+							<li>
+								<a href="{{ subentry.url | absolute_url }}">{{ subentry.name }}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endif %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
 		{% endfor %}
-		{% endif %}   
-      </div>
+		{% endif %}
+	</div>
 
-    <div id="wrapper">
-	  <div id="sidebar" class="flexcolumn" style="justify-content: space-between;">
-		<nav class="sidemenu">
-			<ul></ul>
-		</nav>      
-		<footer>
-			{% if site.github.is_project_page %}
-			<p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-			{% endif %}
-			<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
-		</footer>
-	  </div>
-	  <div id="content" class="flexcolumn" style="flex-grow: 1; min-width: 0;">
-      <section>
-        {{ content }}
-      </section>
-      </div>
-    </div>
-  </body>
+	<div id="wrapper">
+		<div id="sidebar" class="flexcolumn" style="justify-content: space-between;">
+			<nav id="sidemenu">
+				<ul></ul>
+			</nav>
+			<footer>
+				{% if site.github.is_project_page %}
+				<p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+				{% endif %}
+				<p><small>Hosted on GitHub Pages &mdash; Theme by <a
+							href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+			</footer>
+		</div>
+		<div id="content" class="flexcolumn" style="flex-grow: 1; min-width: 0;">
+			<section>
+				{{ content }}
+			</section>
+		</div>
+	</div>
+</body>
+
 </html>

@@ -77,11 +77,11 @@ header {
 
 section {
   overflow-y: auto;
+  //overflow-y: clip;
   height: 100%;
   position: relative;
   padding: 30px 30px 50px 30px;
   margin: 0px 20px 20px 20px;
-  ;
   bottom: 0;
   background: #fbfbfb;
   border-radius: 3px;
@@ -94,12 +94,15 @@ footer {
   text-align: right;
   line-height: 16px;
   margin-top: 10px;
+  //padding-right: 15px;
 }
 
-nav.sidemenu {
+#sidemenu {
+  //overflow-y: auto;
+  overflow-y: clip;
   width: 230px;
   text-align: right;
-  overflow-y: auto;
+  min-height: 0;
   margin-bottom: 10px;
 
   ul {
@@ -107,7 +110,7 @@ nav.sidemenu {
     list-style-image: none;
     font-size: 14px;
     line-height: 24px;
-
+    //padding-right: 15px;
     li {
       padding: 5px 0px;
       line-height: 16px;
