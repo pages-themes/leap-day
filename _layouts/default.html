@@ -23,19 +23,26 @@
 
       <div id="banner">
         <span id="logo"></span>
+		<div class="menubar">
+			<label for="menu-toggle" class="menutoggle"><span id="menuicon"></span></label>
+		    <input type="checkbox" id="menu-toggle" class="menutoggle" style="display: none;"/>
 		{% if site.data.menu.primary[0] %}
 		{% for item in site.data.menu.primary %}
 		{% if item.subfolderitems[0] %}
-			<ul>
+			<ul class="menuroot" id="menuroot">
 				{% for entry in item.subfolderitems %}
 					<li>
 						<div class="dropdown">
 						<a href="{{ entry.url | absolute_url }}" class="dropbtn">{{ entry.name }}</a>
 						{% if entry.subsubfolderitems[0] %}
 							<div class="dropdown-content">
+								<ul>
 								{% for subentry in entry.subsubfolderitems %}
-									<a href="{{ subentry.url | absolute_url }}">{{ subentry.name }}</a>
+									<li>
+										<a href="{{ subentry.url | absolute_url }}">{{ subentry.name }}</a>
+									</li>
                                 {% endfor %}
+								</ul>
 							</div>
                         {% endif %}
 						</div>
@@ -45,10 +52,11 @@
         {% endif %}
 		{% endfor %}
 		{% endif %}   
+		</div>
       </div>
 
     <div class="wrapper">
-	  <div class="flexcolumn" style="justify-content: space-between;">
+	  <div id="sidebar" class="flexcolumn" style="justify-content: space-between;">
 		<nav class="sidemenu">
 			<ul></ul>
 		</nav>      
@@ -59,7 +67,7 @@
 			<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
 		</footer>
 	  </div>
-	  <div class="flexcolumn" style="flex-grow: 1;">
+	  <div id="content" class="flexcolumn" style="flex-grow: 1;">
       <section>
         {{ content }}
       </section>

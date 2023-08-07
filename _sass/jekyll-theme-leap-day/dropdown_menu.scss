@@ -1,4 +1,18 @@
 
+.menubar {
+    ul {
+    list-style:none;
+    //height:40px;
+    padding:0;
+    float: left;
+    margin-left:10px;
+
+    li {
+      display:inline;
+    }
+  }
+}
+
 .dropbtn {
   cursor: pointer;
   line-height:14px;

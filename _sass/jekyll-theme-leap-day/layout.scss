@@ -42,7 +42,7 @@ header {
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
   border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
-
+/*
   .button {
     border: 1px solid #dba500;
     background: linear-gradient(rgb(255, 231, 136), rgb(255, 206, 56));
@@ -105,7 +105,7 @@ header {
       }
     }
   }
-
+*/
   #logo {
     position:absolute;
     height: 36px;
@@ -114,6 +114,13 @@ header {
     top:7px;
     display: block;
     background: url(../images/octocat-logo.svg);
+  }
+  
+  #menuicon {
+    height: 36px;
+    width: 36px;
+    display: block;
+    background: url(../images/menu.png);
   }
 }
 
@@ -213,4 +220,98 @@ body {
   background: url(../images/body-background.png) #eae6d1;
   display: flex;
   flex-direction: column;
+}
+
+.menutoggle {
+  display: none;
+}
+
+@media print, screen and (max-width: 1060px) {
+  #sidebar{
+    display: none;
+  }
+  
+  .menutoggle {
+  display: block;
+  }
+  
+  section {
+    margin: 10px;
+  }
+  
+  .menubar ul li {
+    display: block;
+  }
+  
+  .dropdown {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: block;
+	position: relative;
+	white-space: unset;
+	background: none;
+	background-color: none;
+	box-shadow: none;
+	border: none;
+  }
+  
+  .dropbtn {
+    background: none;
+	background-color: none;
+	box-shadow: none;
+	border: none;
+	margin-top: 0;
+  }
+  
+  .dropdown-content a:hover {
+  	background: none;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background: none;
+  }
+  
+  .menuroot {
+    overflow-y: auto;
+	max-height: 0;
+	margin: 0px;
+  }
+  
+  #menu-toggle:checked + #menuroot {
+    max-height: max-content;
+	  bottom: 0px;
+  top: 180px;
+  margin: 10px;
+	position: absolute;
+  background: linear-gradient(rgb(255, 231, 136), rgb(255, 231, 136));
+  background-color: #ffeca0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  border: 1px solid #dba500;
+  border-radius: 2px;
+  
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,.4), 0px 1px 1px rgba(0,0,0,.1);
+  overflow-y: auto;
+  }
+  
+  #banner {
+    position: unset;
+	height: auto;
+	margin-right: unset;
+  }
+  
+  #content {
+    min-width: 0;
+  }
+  
+  .wrapper {
+    padding: 0px;
+  }
+  #menu-toggle:checked + .wrapper {
+    display: none;
+  }
 }
