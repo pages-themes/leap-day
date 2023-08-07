@@ -1,0 +1,82 @@
+/*@media print, screen and (max-width: 768px)*/
+@media (pointer:none),
+(pointer:coarse) {
+  #sidebar {
+    display: none;
+  }
+
+  section {
+    margin: 10px;
+  }
+
+
+
+  #banner {
+    position: unset;
+
+    .menubar ul li {
+      display: block;
+    }
+
+    .dropdown {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: block;
+      position: relative;
+      white-space: unset;
+      background: none;
+      background-color: none;
+      box-shadow: none;
+      border: none;
+      padding: 0px;
+    }
+
+    .dropbtn {
+      background: none;
+      background-color: none;
+      box-shadow: none;
+      border: none;
+      margin-top: 0;
+    }
+
+    .dropdown-content a:hover {
+      background: none;
+    }
+
+    .dropdown:hover .dropbtn {
+      background: none;
+    }
+
+    .menuroot {
+      overflow-y: auto;
+      max-height: 0;
+      margin: 0px;
+    }
+
+    #menu-toggle:checked+.menuroot {
+      max-height: max-content;
+      bottom: 0px;
+      top: 180px;
+      margin: 10px;
+      position: absolute;
+      background: linear-gradient(rgb(255, 231, 136), rgb(255, 231, 136));
+      min-width: 160px;
+      z-index: 1;
+
+      border: 1px solid #dba500;
+      border-radius: 2px;
+    }
+
+    #menu-icon {
+      display: block;
+      background: url(../images/menu.png);
+      background-size: cover;
+    }
+  }
+
+  #wrapper {
+    padding-top: 0px;
+  }
+}
