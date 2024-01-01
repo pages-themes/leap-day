@@ -3,3 +3,7 @@ description: Leap Day is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-leap-day
+
+# Site Configuration
+name: Linkhub  # Name of your website
+url: https://github.com/eun-su/eunsuo.github.io.git
