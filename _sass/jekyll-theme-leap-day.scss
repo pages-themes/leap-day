@@ -304,9 +304,11 @@ nav {
   width: 230px;
   position: fixed;
   top: 220px;
-  left:50%;
+  left: 50%;
+  bottom: 0;
   margin-left:-580px;
   text-align: right;
+  overflow-y: auto;
 
   ul {
     list-style: none;
